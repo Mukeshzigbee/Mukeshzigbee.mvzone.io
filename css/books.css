@@ -1,0 +1,128 @@
+body {
+    font-family: 'Baloo 2', cursive;
+    display: block;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    top: 0px;
+
+}
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar ul li {
+    list-style: none;
+    color: red;
+}
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 2px 32px;
+    font-size: 1.5rem;
+    color: white;
+
+}
+#navbar ul li a:hover {
+    background-color: chartreuse;
+    color: black
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 704px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("/background/background1.jpg") no-repeat center center/cover;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 6px 18px;
+    text-align: center;
+    bottom: 0px;
+    position: absolute;
+    width: 1330px
+}
+
+#contactbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contactbox input,
+#contactbox textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+
+}
+
+#contactbox form {
+    width: 40%;
+    padding: 50px;
+}
+
+#contactbox label {
+    font-size: 1.3rem;
+}
+
+.mycontact {
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+}
+@media screen and (max-width:1200px) {
+    body {
+        background-color: #bab0b0;
+    }
+    #navbar ul li a{
+        padding:0px;
+        margin: 9px;
+        font-size: 17px;
+        }
+    #navbar ul li{
+        padding:0px;
+        margin:0px;
+        }
+    .mycontact{
+        font-size: 33px;
+    }
+    #contactbox form{
+        width: 280px;
+        padding: 24px;
+    }
+    footer{
+        width:90%;
+    }
+    
+}
