@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=PT+Sans&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+.movies1{
+    color:wheat;
+    
+}
+body{
+    background-color: #22255b;
+    margin:0px;
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    /* justify-content: flex-end; */
+    margin: auto;
+    flex-direction: column;
+    /* margin: auto; */
+    text-align: center;
+    margin:10px;
+
+}
+header input{
+    border-radius: 20px;
+    padding:8px;
+    background-color: transparent;
+    border:2px solid green;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie{
+    background-color: #373b69;
+    border-radius: 3px;
+    width:300px;
+    position: relative;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    margin:1rem;
+    overflow: hidden;
+}
+
+.movie img{
+    width:100%;
+}
+
+.movie-info{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 1px;
+
+}
+
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span{
+    background-color: #22254b;
+    border-radius:3px;
+    padding: 0.25rem 0.5rem;
+}
+
+
+.movie-info span.green{
+    color: green;
+    
+}
+
+.movie-info span.yellow{
+    color: yellow;
+}
+
+.movie-info span.red{
+    color: red;
+    
+}
+
+.overview {
+    background-color: rgb(136, 192, 192);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+}
+.movie:hover .overview{
+    transform: translateY(0);
+}
